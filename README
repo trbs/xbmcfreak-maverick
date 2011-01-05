@@ -1,0 +1,73 @@
+23 okt 2010
+
+- XBMC 10.00 beta4 packages
+- added support for support ALC880
+- enable resume USB remotes - thx to trbs
+- latest version makemkv (blu-ray support)
+- improved xbmc-remote-php version
+
+19 okt 2010
+
+- XBMC 10.00 Beta3 packages
+- New Nvidia Linux Display Drivers 260.19.12
+- XBMC Remote PHP added
+- NFS support added
+- PHP supprt added
+- Fixes for Auto sound Nvidia ION and second ION devices
+- New live /etc/xbmc/live.d/ configuration options
+- Torrent-transmission settings.json symbolic link fix
+
+6 okt 2010
+
+- add auto configure sound for nvidia ion & ion2
+- crystalhd-for-osx-3.8.0 instead of 2.0.0
+- wireless driver backports package
+- removed g++ autoconf packages
+- live-boot version 2.0.1-1 
+
+27 sept 2010
+
+./buildWithOptions.sh --variant lucid --xbmc-svn --x-swat --proposed
+
+- Ubuntu Audio Dev team PPA added
+- /etc/pm/sleep.d/74network-resume.sh added
+- added echo USB0 > /proc/acpi/wakeup to rc.local
+- grub2 uses an universally supported resolution (800x600), avoid blank ttys (Ctrl-Alt-F1/F6)
+- vsync 2 for nvidia cards enabled
+- fixes for sabnzbd, use http://ip-address:9999/wizard to configure for the first time
+- .xml config files creation fixed
+- fixes for torrenttransmission
+- apache servername added
+- ssh slowdown trying to fix for some users (UseDNS no, GSSAPIAuthentication no)
+
+15 sept 2010:
+
+- Added pro-posed repo
+- Additional fixes after beta2
+
+10.00 beta2:
+
+- /var/www/index.html added
+- Nvidia ION Alsa scripts added
+- /bin/nvclock added
+- XBMCFreak.sh using the new Hooks instead of runonce
+
+svn32416 (svn):
+
+- advancedsettings.xml added for Nvidia ION GPU's
+- sources.xml added
+- coretemp modules added to /etc/modules
+- rtmpdump binaries added
+- compat-wireless-2.6.35 package (rc6)
+- kernel 2.6.32-24
+- wakeonlan added
+- ethtool and locate added
+
+10.08 (SVN):
+- started from scratch by import latest SVN
+
+V15:
+- .gitignore added
+- makemkv updated to 1.5.5
+- Nvidia drivers updated to 195.36.24
+- Liveinstaller package fixed
