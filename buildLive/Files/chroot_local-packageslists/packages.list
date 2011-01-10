@@ -29,8 +29,8 @@ fglrx fglrx-amdcccle
 nvidia-current libvdpau1
 vdpau-va-driver
 wpasupplicant wireless-tools
-linux-backports-modules-alsa-maverick-generic 
-linux-backports-modules-wireless-maverick-generic
+#linux-backports-modules-alsa-maverick-generic 
+#linux-backports-modules-wireless-maverick-generic
 avahi-daemon
 samba
 proftpd

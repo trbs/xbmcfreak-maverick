@@ -1,3 +1,13 @@
+To build:
+
+sudo ./buildWithOptions.sh --variant maverick --x-swat --xbmc-svn
+
+10 jan 2011
+
+- Added https://launchpad.net/~suraia/+archive/ppa to support 2.6.37
+- XBMC 10.00 final
+- Sync with Lucid repo
+
 23 okt 2010
 
 - XBMC 10.00 beta4 packages
@@ -26,8 +36,6 @@
 - live-boot version 2.0.1-1 
 
 27 sept 2010
-
-./buildWithOptions.sh --variant lucid --xbmc-svn --x-swat --proposed
 
 - Ubuntu Audio Dev team PPA added
 - /etc/pm/sleep.d/74network-resume.sh added
