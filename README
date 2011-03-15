@@ -2,6 +2,11 @@ To build:
 
 sudo ./buildWithOptions.sh --variant maverick --x-swat --xbmc-svn
 
+10 mar 2011
+
+- Update to latest packages
+- Disable double remote drivers
+
 10 jan 2011
 
 - Added https://launchpad.net/~suraia/+archive/ppa to support 2.6.37

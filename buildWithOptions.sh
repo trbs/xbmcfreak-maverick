@@ -24,7 +24,7 @@ SDK_BUILDHOOKS=""
 
 # getopt-parse.bash
 
-TEMP=$(getopt -o snp:ulkgiv:h:xP --long xbmc-svn,nvidia-only,proxy:,usb-image,live-only,keep-workarea,grub2,intel-only,variant:,hook:,x-swat,proposed -- "$@")
+TEMP=$(getopt -o snp:ulkgiv:h:xP --long xbmc-svn,nvidia-only,proxy:,usb-image,live-only,keep-workarea,grub2,intel-only,variant:,hook:,x-swat,proposed,yavdr,tonio,thopiekar -- "$@")
 eval set -- "$TEMP"
 
 while true
@@ -88,6 +88,21 @@ do
 		export SDK_BUILDHOOKS="$SDK_BUILDHOOKS ./buildHook-xswat.sh"
 		shift
 		;;
+        -t|--tonio)
+                echo "Enable option: Use tonio repository"
+                export SDK_BUILDHOOKS="$SDK_BUILDHOOKS ./buildHook-tonio.sh"
+                shift
+                ;;
+        -y|--yavdr)
+                echo "Enable option: Use yavdr repository"
+                export SDK_BUILDHOOKS="$SDK_BUILDHOOKS ./buildHook-yavdr.sh"
+                shift
+                ;;
+        -th|--thopiekar)
+                echo "Enable option: Use thopiekar repository"
+                export SDK_BUILDHOOKS="$SDK_BUILDHOOKS ./buildHook-thopiekar.sh"
+                shift
+                ;;
 	-P|--proposed)
                 echo "Enable option: Use proposed repository"
                 export SDK_BUILDHOOKS="$SDK_BUILDHOOKS ./buildHook-proposed.sh"

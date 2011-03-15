@@ -10,7 +10,7 @@ xorg xinit fluxbox
 mesa-utils libgl1-mesa-dri xlibmesa-glu
 genext2fs
 cpufrequtils
-hts-tvheadend
+#hts-tvheadend
 policykit-1
 upower
 udisks
@@ -43,3 +43,5 @@ libid3tag0 mt-daapd
 python-software-properties
 locate ethtool
 nfs-common
+#lirc-nct677x
+#nct677x-dkms
