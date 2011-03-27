@@ -37,4 +37,5 @@ for k in "${ADDONSLIST[@]}" ; do
 		exit 1
 	fi
 	unzip -q $latestPackage -d $WORKPATH/buildLive/Files/chroot_local-includes/usr/share/xbmc/addons
+	rm script.*.zip &> /dev/null
 done
