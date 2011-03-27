@@ -31,7 +31,7 @@ build()
 	lh chroot_devpts remove
 	lh chroot_proc remove
 	lh chroot_sysfs remove
-	
+
 	for modulesdir in chroot/lib/modules/*
 	do
 		umount $modulesdir/volatile &> /dev/null
@@ -54,8 +54,20 @@ rm -rf $WORKDIR &> /dev/null
 mkdir -p "$THISDIR/$WORKDIR"
 cd "$THISDIR/$WORKDIR"
 
+echo ""
+echo "-------------------------------"
+echo "Perform buildLive makeConfig..."
+echo "-------------------------------"
+echo ""
+
 # Create config tree
 makeConfig
+
+echo ""
+echo "-------------------------------"
+echo "Create chroot and build...     "
+echo "-------------------------------"
+echo ""
 
 # Create chroot and build drivers
 build
