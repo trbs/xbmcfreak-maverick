@@ -90,7 +90,7 @@ fi
 echo "Creating new workarea..." 
 
 # cp all (except svn directories) into workarea
-rsync -r -l --exclude=.svn --exclude=$WORKDIR . $WORKDIR
+rsync -r -l --exclude=.git --exclude=$WORKDIR . $WORKDIR
 
 if ! which lh > /dev/null ; then
 	cd $WORKPATH/Tools
