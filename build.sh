@@ -98,7 +98,7 @@ if ! which lh > /dev/null ; then
 		if [ ! -f live-build.tar ]; then
 			git clone git://live.debian.net/git/live-build.git 
 			pushd live-build > /dev/null
-			git checkout -b 2.0_a22-1 debian/2.0_a22-1
+			git checkout -b debian-old-2.0 remotes/origin/debian-old-2.0
 			if [ "$?" -ne "0" ]; then
 				exit 1
 			fi
@@ -114,7 +114,7 @@ if ! which lh > /dev/null ; then
 		# Fix for missing directory for Ubuntu's d-i, to be removed when fixed upstream!
 		cd live-build/data/debian-cd
 		if [ ! -h $VARIANTNAME ]; then
-			ln -s lenny $VARIANTNAME
+			ln -s maverick $VARIANTNAME
 		fi
 		cd $WORKPATH/Tools
 	fi
