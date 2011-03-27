@@ -18,6 +18,12 @@
 #  the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 #  http://www.gnu.org/copyleft/gpl.html
 
+echo ""
+echo "-------------------------------"
+echo "Copy live installer packages..."
+echo "-------------------------------"
+echo ""
+
 mkdir -p $WORKPATH/buildLive/Files/binary_local-udebs &> /dev/null
 
 if ! ls $WORKPATH/buildDEBs/live-installer*.udeb > /dev/null 2>&1; then

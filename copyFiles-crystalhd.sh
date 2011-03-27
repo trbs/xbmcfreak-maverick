@@ -20,7 +20,9 @@
 
 
 echo ""
+echo "-------------------------------"
 echo "Retrieving CrystalHD drivers..."
+echo "-------------------------------"
 echo ""
 
 mkdir -p $WORKPATH/buildLive/Files/chroot_local-includes/root &> /dev/null
