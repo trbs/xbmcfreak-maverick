@@ -207,8 +207,15 @@ cd $WORKPATH/buildLive
 ./build.sh
 cd $THISDIR
 
-#mv $WORKPATH/buildLive/binary.* .
-#chmod 777 binary.*
+echo ""
+echo "-------------------------------"
+echo "Perform copying binary files..."
+echo "-------------------------------"
+echo ""
+
+mv $WORKPATH/buildLive/binary.* .
+chmod 777 binary.*
+
 #mkdir /mnt/cdrom -p
 #mount -o loop binary.iso /mnt/cdrom
 #grub-mkrescue -o binary-fixed.iso /mnt/cdrom
