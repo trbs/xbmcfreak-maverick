@@ -19,12 +19,14 @@
 #  http://www.gnu.org/copyleft/gpl.html
 
 echo ""
-echo "Fix live-snapshot..."
+echo "-------------------------------"
+echo "Fix live-snapshot...           "
+echo "-------------------------------"
 echo ""
 
 #
 # A bug, fixed upstream on trunk but not on the old branch we use, prevents snapshotting to work
-# 
+#
 
 # Broken:
 # SNAP_COW=$(echo "${SNAP_RESYNC_STRING}" | sed -e 's|^/root\([^:.]*\).*$|'"${DEF_SNAP_COW}"'\1|')

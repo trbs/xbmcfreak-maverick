@@ -19,7 +19,9 @@
 #  http://www.gnu.org/copyleft/gpl.html
 
 echo ""
-echo "Set CPU throttling..."
+echo "-------------------------------"
+echo "Set CPU throttling......       "
+echo "-------------------------------"
 echo ""
 
 package=cpufrequtils

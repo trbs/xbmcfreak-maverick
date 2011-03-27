@@ -19,7 +19,9 @@
 #  http://www.gnu.org/copyleft/gpl.html
 
 echo ""
-echo "Set hts_tvheadend user & web credentials..."
+echo "-------------------------------"
+echo "Set hts_tvheadend user         "
+echo "-------------------------------"
 echo ""
 
 cat > /etc/default/tvheadend << EOF

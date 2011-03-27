@@ -19,7 +19,9 @@
 #  http://www.gnu.org/copyleft/gpl.html
 
 echo ""
-echo "Adjust default groups for new users..."
+echo "-------------------------------"
+echo "Adjust default groups......    "
+echo "-------------------------------"
 echo ""
 
 # Probably not needed at all now

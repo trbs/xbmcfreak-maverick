@@ -19,7 +19,9 @@
 #  http://www.gnu.org/copyleft/gpl.html
 
 echo ""
-echo "Set lirc..."
+echo "-------------------------------"
+echo "Set lirc......                 "
+echo "-------------------------------"
 echo ""
 
 # TOFIX
