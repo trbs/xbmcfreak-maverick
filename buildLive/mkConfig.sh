@@ -20,6 +20,7 @@
 makeConfig()
 {
 	CATEGORIES="main restricted universe multiverse"
+	UBUNTU_ARCHIVE="http://nl.archive.ubuntu.com/ubuntu/"
 
 	configString=""
 	configString="$configString --mode ubuntu"
@@ -50,9 +51,9 @@ makeConfig()
 		configString="$configString --apt-ftp-proxy $APT_FTP_PROXY"
 	fi
 
-	configString="$configString --mirror-bootstrap http://archive.ubuntu.com/ubuntu/"
-	configString="$configString --mirror-binary http://archive.ubuntu.com/ubuntu/"
-	configString="$configString --mirror-chroot http://archive.ubuntu.com/ubuntu/"
+	configString="$configString --mirror-bootstrap $UBUNTU_ARCHIVE"
+	configString="$configString --mirror-binary $UBUNTU_ARCHIVE"
+	configString="$configString --mirror-chroot $UBUNTU_ARCHIVE"
 
 	lh config --mode ubuntu --archive-areas "$CATEGORIES" $configString
 
