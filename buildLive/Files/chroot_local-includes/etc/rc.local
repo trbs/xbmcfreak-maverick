@@ -24,7 +24,7 @@ done
 alsactl store &> /dev/null
 
 #set hostname
-hostname XBMCLive
+[ -f /etc/xbmc/hostname ] && hostname `cat /etc/xbmc/hostname` || hostname XBMCLive
 
 #fix asrock remote double click
 echo none +lirc > /sys/class/rc/rc0/protocols
