@@ -87,6 +87,10 @@ if ls $THISDIR/binary.* > /dev/null 2>&1; then
 	rm -rf $THISDIR/binary.*
 fi
 
+if ls $THISDIR/script.*.zip > /dev/null 2>&1; then
+	rm -rf $THISDIR/script.*.zip
+fi
+
 echo "Creating new workarea..."
 
 # cp all (except svn directories) into workarea
