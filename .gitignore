@@ -1,3 +1,6 @@
 *.iso
 *.svn
 *.zip
+*.log
+binary.packages
+binary.list
