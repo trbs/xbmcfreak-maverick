@@ -11,11 +11,17 @@
 #
 # By default this script does nothing.
 
-#enable resume from standby function for MS remotes
+#unmute alsa
 /usr/bin/amixer -q -c 0 sset 'IEC958 Default PCM',0 unmute &> /dev/null
 /usr/bin/amixer -q -c 0 sset 'IEC958',0 unmute &> /dev/null
 /usr/bin/amixer -q -c 0 sset 'IEC958',1 unmute &> /dev/null
 /usr/bin/amixer -c 1 sset 'IEC958' unmute &> /dev/null
 alsactl store &> /dev/null
+
+#set hostname
 hostname XBMCLive
+
+#fix asrock remote double click
+echo none +lirc > /sys/class/rc/rc0/protocols
+
 exit 0
