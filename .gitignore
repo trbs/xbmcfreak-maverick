@@ -4,3 +4,6 @@
 *.log
 binary.packages
 binary.list
+binary.iso
+workarea
+
