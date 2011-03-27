@@ -1,6 +1,11 @@
 To build:
 
-sudo ./buildWithOptions.sh --variant maverick --x-swat --xbmc-svn
+sudo ./buildWithOptions.sh --variant maverick --xbmc
+
+27 mar 2011
+
+- cherry pick from trbs
+- backport fixes from trunk xbmc
 
 10 mar 2011
 
