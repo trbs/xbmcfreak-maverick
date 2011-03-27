@@ -98,9 +98,11 @@ if ! which lh > /dev/null ; then
 		if [ ! -f live-build.tar ]; then
 			git clone git://live.debian.net/git/live-build.git 
 			pushd live-build > /dev/null
-			git checkout -b debian-old-2.0 remotes/origin/debian-old-2.0
-			if [ "$?" -ne "0" ]; then
-				exit 1
+			gitMinorVersion=$(git --version | cut -d" " -f3 | cut -d. -f2)
+			if [ $gitMinorVersion -eq "6" ] ; then
+				git checkout -b debian/2.0.12-2 debian/2.0.12-2
+			else
+				git checkout debian/2.0.12-2
 			fi
 			popd > /dev/null
 
