@@ -11,6 +11,11 @@
 #
 # By default this script does nothing.
 
+#enable resume USB remotes (enable all ports)
+for device in `cat /proc/acpi/wakeup | grep disabled | awk '{ print $1 }' | grep US..`; do
+    echo "$device" > /proc/acpi/wakeup
+done
+
 #unmute alsa
 /usr/bin/amixer -q -c 0 sset 'IEC958 Default PCM',0 unmute &> /dev/null
 /usr/bin/amixer -q -c 0 sset 'IEC958',0 unmute &> /dev/null

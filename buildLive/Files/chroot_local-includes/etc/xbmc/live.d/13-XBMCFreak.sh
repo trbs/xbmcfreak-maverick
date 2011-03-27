@@ -180,8 +180,8 @@ fi
 hostname $VHOSTNAME
 
 #enable resume USB remotes (enable all ports)
-for device in `cat /proc/acpi/wakeup |awk '{ print $1 }'|grep US..`; do
- echo $device  > /proc/acpi/wakeup &> /dev/null
+for device in `cat /proc/acpi/wakeup | grep disabled | awk '{ print $1 }' | grep US..`; do
+    echo $device > /proc/acpi/wakeup
 done
 
 exit 0
